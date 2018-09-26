@@ -1,0 +1,20 @@
+int main()
+{
+    int nota1, nota2, nota3, mf, falta;
+    printf("\nInsira sua primeira nota: ");
+    scanf("%i", &nota1);
+    printf("\nInsira sua segunda nota: ");
+    scanf("%i", &nota2);
+    printf("\nInsira sua terceira nota: ");
+    scanf("%i", &nota3);
+    printf("\nInsira suas faltas: ");
+    scanf("%i", &falta);
+    mf = (nota1 + nota2 + nota3) / 3;
+    if (falta>20|| mf < 3)
+        printf("\n Voce esta reprovado!");
+    else if (mf < 7)
+        printf("\n Voce esta de recuperação!");
+    else
+        printf("\nVoce passou!!");
+    return 0;
+}
